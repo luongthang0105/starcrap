@@ -5,9 +5,10 @@
 #include <thread>
 #include <chrono>
 #include <string>
-
+#include <algorithm>
+#include <vector>
 using namespace BWAPI;
-
+using namespace std;
 void drawStats();
 void drawBullets();
 void drawVisibilityData();
@@ -63,25 +64,36 @@ int main(int argc, const char* argv[])
     }
     else
     {
-      if (Broodwar->enemy())
+      //if (Broodwar->enemy())
         Broodwar << "The match up is " << Broodwar->self()->getRace() << " vs " << Broodwar->enemy()->getRace() << std::endl;
-
       //send each worker to the mineral field that is closest to it
       Unitset units    = Broodwar->self()->getUnits();
-      Unitset minerals  = Broodwar->getMinerals();
+      Unitset minerals = Broodwar->getMinerals();
+      vector<int> check(int(minerals.size() + 1), 0);
+      int times = 0;
       for ( auto &u : units )
       {
         if ( u->getType().isWorker() )
         {
           Unit closestMineral = nullptr;
-
-          for (auto &m : minerals)
+          int id, it;
+          id = it = 0;
+          cout << "linh " << ++times << " " << endl;
+          for (auto& m : minerals)
           {
-            if ( !closestMineral || u->getDistance(m) < u->getDistance(closestMineral))
-              closestMineral = m;
+              if (!check[id] && (!closestMineral || u->getDistance(m) < u->getDistance(closestMineral)) )
+              {
+                  closestMineral = m;
+                  id = it;
+              }
+              ++it;
           }
-          if ( closestMineral )
-            u->rightClick(closestMineral);
+          if (closestMineral)
+          {
+              u->rightClick(closestMineral);
+              cout << "khoang'" << id << endl;
+              check[id] = 1;
+          }
         }
         else if ( u->getType().isResourceDepot() )
         {
@@ -197,8 +209,9 @@ int main(int argc, const char* argv[])
         drawVisibilityData();
 
       drawStats();
-      Broodwar->drawTextScreen(300,0,"FPS: %f",Broodwar->getAverageFPS());
-
+      //Broodwar->drawTextScreen(300,0,"FPS: %f",Broodwar->getAverageFPS());
+      Broodwar->drawTextScreen(200, 0, "FPS: %d", Broodwar->getFPS());
+      Broodwar->drawTextScreen(200, 20, "Average FPS: %f", Broodwar->getAverageFPS());
       BWAPI::BWAPIClient.update();
       if (!BWAPI::BWAPIClient.isConnected())
       {
@@ -215,14 +228,14 @@ int main(int argc, const char* argv[])
 
 void drawStats()
 {
-  int line = 0;
+  int line = 1;
   Broodwar->drawTextScreen(5, 0, "I have %d units:", Broodwar->self()->allUnitCount() );
   for (auto& unitType : UnitTypes::allUnitTypes())
   {
     int count = Broodwar->self()->allUnitCount(unitType);
     if ( count )
     {
-      Broodwar->drawTextScreen(5, 16*line, "- %d %s%c", count, unitType.c_str(), count == 1 ? ' ' : 's');
+      Broodwar->drawTextScreen(5, 12*line, "- %d %s%c", count, unitType.c_str(), count == 1 ? ' ' : 's');
       ++line;
     }
   }
