@@ -81,7 +81,7 @@ int main(int argc, const char* argv[])
           cout << "linh " << ++times << " " << endl;
           for (auto& m : minerals)
           {
-              if (!check[id] && (!closestMineral || u->getDistance(m) < u->getDistance(closestMineral)) )
+              if (!check[it] && (!closestMineral || u->getDistance(m) < u->getDistance(closestMineral)) )
               {
                   closestMineral = m;
                   id = it;
