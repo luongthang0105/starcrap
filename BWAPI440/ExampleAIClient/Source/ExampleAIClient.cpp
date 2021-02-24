@@ -1,6 +1,8 @@
+// INCLUDING CLASSES
 #include <BWAPI.h>
 #include <BWAPI/Client.h>
-
+ 
+//INCLUDING LIB
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -24,22 +26,6 @@ void reconnect()
         std::this_thread::sleep_for(std::chrono::milliseconds{ 1000 });
     }
 }
-
-class Worker {
-public:
-    Unit w;
-};
-
-class Army {
-public:
-    Unit w;
-};
-
-class Scout {
-public:
-    Unit w;
-};
-
 
 void move_available(Unit u, Unitset minerals, int& times, vector<int>& check, Unit closestMineral) {
     Unit closestMineral = nullptr;
@@ -87,10 +73,13 @@ int main(int argc, const char* argv[])
         show_bullets = false;
         show_visibility_data = false;
 
+        // INITIALIZING VAR
         Unitset units = Broodwar->self()->getUnits();
         Unitset minerals = Broodwar->getMinerals();
         vector<int> check(int(minerals.size() + 1), 0);
         int times = 0;
+
+        //vector<Worker> Workers;
 
         if (Broodwar->isReplay())
         {
@@ -106,6 +95,7 @@ int main(int argc, const char* argv[])
         {
             //if (Broodwar->enemy())
             Broodwar << "The match up is " << Broodwar->self()->getRace() << " vs " << Broodwar->enemy()->getRace() << std::endl;
+
 
             for (auto& u : units)
             {
