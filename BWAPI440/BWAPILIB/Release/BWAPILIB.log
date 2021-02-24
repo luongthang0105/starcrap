@@ -1,0 +1,9 @@
+﻿  BWAPI.cpp
+  Filters.cpp
+  Game.cpp
+  Playerset.cpp
+  Position.cpp
+  Region.cpp
+  Unit.cpp
+  Unitset.cpp
+  BWAPILIB.vcxproj -> E:\GAME\LIBRARIES\BWAPI440\Release\BWAPILIB.lib

@@ -1,0 +1,31 @@
+2/21/2021 4:29:54 PM 7196 Logging started
+2/21/2021 4:29:54 PM 7196 Already running
+2/21/2021 4:29:54 PM 7196 Logging ended
+2/21/2021 4:32:15 PM 13528 Startbutton
+2/21/2021 4:32:15 PM 13528 Starting Game Starcraft 1.16.1 E:\GAME\Starcraft\StarCraft.exe
+2/21/2021 4:32:15 PM 13528 BWAPI 4.4.0 Injector [RELEASE] Version  Compatible
+2/21/2021 4:32:15 PM 13528 W-MODE 1.02 Version 1.0.2 Compatible
+2/21/2021 4:32:15 PM 13528 Obtained DebugPrivilege
+2/21/2021 4:32:15 PM 13528 CreateProcess
+2/21/2021 4:32:15 PM 13528 Call ScSuspended for all active Plugins
+2/21/2021 4:32:15 PM 13528 ApplyPatchSuspended for BWAPI 4.4.0 Injector [RELEASE]
+2/21/2021 4:32:16 PM 13528 ApplyPatchSuspended for W-MODE 1.02
+2/21/2021 4:32:16 PM 13528 ResumeThread
+2/21/2021 4:32:16 PM 13528 WaitForInputIdle
+2/21/2021 4:32:16 PM 13528 Call ScWindowCreated for all active Plugins
+2/21/2021 4:32:16 PM 13528 ApplyPatch for BWAPI 4.4.0 Injector [RELEASE]
+2/21/2021 4:32:16 PM 13528 ApplyPatch for W-MODE 1.02
+2/21/2021 4:32:16 PM 13528 Starting Starcraft completed
+2/21/2021 8:35:18 PM 13528 Finishing
+2/21/2021 8:35:18 PM 13528 Unloading Plugin ICCup
+2/21/2021 8:35:18 PM 13528 Unloading Plugin APMAlert (1.16.1)
+2/21/2021 8:35:18 PM 13528 Unloading Plugin BWAPI 4.4.0 Injector [RELEASE]
+2/21/2021 8:35:18 PM 13528 Unloading Plugin BWAPI 4.4.0 Injector [DEBUG]
+2/21/2021 8:35:18 PM 13528 Unloading Plugin Chaosplugin for 1.16.1
+2/21/2021 8:35:18 PM 13528 Unloading Plugin LatencyChanger for 1.16.1
+2/21/2021 8:35:18 PM 13528 Unloading Plugin RepFix
+2/21/2021 8:35:18 PM 13528 Unloading Plugin RWAPlayer (1.16.1)
+2/21/2021 8:35:18 PM 13528 Unloading Plugin RWARecorder (1.16.1)
+2/21/2021 8:35:18 PM 13528 Unloading Plugin Stormplugin for 1.16.1
+2/21/2021 8:35:18 PM 13528 Unloading Plugin W-MODE 1.02
+2/21/2021 8:35:18 PM 13528 Logging ended

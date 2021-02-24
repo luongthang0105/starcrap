@@ -1,0 +1,72 @@
+[2021-02-06 13:11:02] Unable to find E:\GAME\STARCRAFT\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:16:46] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:16:52] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:17:02] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:20:27] Unable to find E:\GAME\STARCRAFT\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:21:09] Unable to find E:\GAME\STARCRAFT\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:25:01] Unable to find E:\GAME\STARCRAFT\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:28:43] Unable to find E:\GAME\STARCRAFT\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:29:39] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:31:30] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:30:32] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:36:50] Unable to find E:\GAME\Starcraft\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:37:09] Unable to find E:\GAME\Starcraft\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2021-02-06 13:40:34] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:40:44] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:40:54] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:40:58] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
+[2021-02-06 13:43:45] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
