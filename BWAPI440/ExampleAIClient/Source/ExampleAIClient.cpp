@@ -1,7 +1,10 @@
 // INCLUDING CLASSES
 #include <BWAPI.h>
 #include <BWAPI/Client.h>
- 
+#include "Workers/Workers.h"
+#include "Scouters/Scouters.h"
+#include "Armies/Army.h"
+
 //INCLUDING LIB
 #include <iostream>
 #include <thread>
@@ -9,8 +12,12 @@
 #include <string>
 #include <algorithm>
 #include <vector>
+
+//USING NAMESPACES
 using namespace BWAPI;
 using namespace std;
+
+//PRE - DECLARATION
 void drawStats();
 void drawBullets();
 void drawVisibilityData();
@@ -27,7 +34,7 @@ void reconnect()
     }
 }
 
-void move_available(Unit u, Unitset minerals, int& times, vector<int>& check, Unit closestMineral) {
+void move_available(Unit u, Unitset minerals, int& times, vector<int>& check) {
     Unit closestMineral = nullptr;
     int id, it;
     id = it = 0;
@@ -101,8 +108,7 @@ int main(int argc, const char* argv[])
             {
                 if (u->getType().isWorker())
                 {
-                    Unit closestMineral = nullptr;
-                    move_available(u, minerals, times, check, closestMineral);
+                    move_available(u, minerals, times, check);
                     cout << "linh " << ++times << " " << endl;
                 }
                 else if (u->getType().isResourceDepot())
@@ -112,6 +118,11 @@ int main(int argc, const char* argv[])
                 }
             }
         }
+/*
+        vector<Worker> Workers;
+        vector<Scouter> Scouters;
+        vector<Army> Armies;
+        */
         while (Broodwar->isInGame())
         {
             for (auto& e : Broodwar->getEvents())
@@ -165,7 +176,9 @@ int main(int argc, const char* argv[])
                     if (!Broodwar->isReplay())
                     {
                         Broodwar << "A " << e.getUnit()->getType() << " [" << e.getUnit() << "] has been created at " << e.getUnit()->getPosition() << std::endl;
+                        if (e.getUnit()->getType().isWorker()) {
 
+                        }
                     }
                     else
                     {

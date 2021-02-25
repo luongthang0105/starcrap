@@ -1,8 +1,0 @@
-﻿  ExampleAIClient.cpp
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(6,9): error C3646: 'wk': unknown override specifier
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(6,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(11,12): error C3646: 'wk': unknown override specifier
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(11,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(16,12): error C3646: 'wk': unknown override specifier
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\My_Classes.h(16,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\GITcmnHUB\starcrap\BWAPI440\ExampleAIClient\Source\ExampleAIClient.cpp(32,27): error C2082: redefinition of formal parameter 'closestMineral'
